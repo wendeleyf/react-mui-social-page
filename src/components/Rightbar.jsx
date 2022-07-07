@@ -11,7 +11,9 @@ function Rightbar() {
           xs: 'none', sm: 'block'
         }
       }}>
-        Rightbar
+        <Box position='fixed'>
+          
+        </Box>
     </Box>
   )
 }

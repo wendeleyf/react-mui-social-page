@@ -4,7 +4,7 @@ import React from 'react'
 
 function Sidebar() {
   return (
-    <Box 
+    <Box
       flex={1} 
       p={2} 
       sx={{
@@ -12,6 +12,7 @@ function Sidebar() {
           xs: 'none', sm: 'block'
         }
       }}>
+        <Box position='fixed'>
         <List>
           <ListItem>
             <ListItemButton component='a' href='#home'>
@@ -70,6 +71,7 @@ function Sidebar() {
             </ListItemButton>
           </ListItem>
         </List>
+        </Box>
     </Box>
   )
 }
