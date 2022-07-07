@@ -1,10 +1,21 @@
-import { Button } from "@mui/material";
+import Sidebar from './components/Sidebar';
+import Feed from './components/Feed';
+import Rightbar from './components/Rightbar';
+import Navbar from './components/Navbar';
+import { Box, Stack } from '@mui/material';
+
 
 function App() {
   return (
-    <div className="App">
-      <Button variant="contained">Primary</Button>
-    </div>
+    <Box>
+      {/* navbar */}
+      <Navbar />
+      <Stack direction='row' spacing={2} justifyContent='space-between'>
+        <Sidebar />
+        <Feed />
+        <Rightbar />
+      </Stack>
+    </Box>
   );
 }
 
