@@ -9,7 +9,7 @@ function Sidebar() {
       p={2} 
       sx={{
         display:{
-          xs: 'none', sm: 'block'
+          xs: 'none', sm: 'none', md:'block'
         }
       }}>
         <Box position='fixed'>
